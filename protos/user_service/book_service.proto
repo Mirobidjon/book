@@ -1,0 +1,21 @@
+syntax="proto3";
+
+package genproto;
+option go_package="genproto/user_service";
+
+import "book.proto";
+import "google/protobuf/empty.proto";
+
+service BookService {
+    rpc Create(CreateBookParams) returns (BookId) {}
+    rpc Update(Book) returns (google.protobuf.Empty) {}
+    rpc Get(BookId) returns (Book) {}
+    rpc GetAll(GetAllRequest) returns (GetAllBookResponse) {}
+    rpc Delete(BookId) returns (google.protobuf.Empty) {}
+}
+
+message GetAllRequest {
+    uint32 _offset = 1;
+    uint32 _limit = 2;
+    string search = 3;
+}

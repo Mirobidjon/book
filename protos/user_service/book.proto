@@ -1,0 +1,26 @@
+syntax="proto3";
+
+package genproto;
+option go_package="genproto/user_service";
+
+import "google/protobuf/wrappers.proto";
+
+message CreateBookParams {
+    string name = 1;
+    google.protobuf.StringValue image = 2;
+}
+
+message Book {
+    string id = 1;
+    string name = 2;
+    google.protobuf.StringValue image = 3;
+}
+
+message BookId {
+    string id = 1;
+}
+
+message GetAllBookResponse {
+    repeated Book books = 1;
+    int32 count = 2;
+}

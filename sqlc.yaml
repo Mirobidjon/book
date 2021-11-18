@@ -1,0 +1,18 @@
+version: "1"
+packages: 
+  - path: "./storage/sqlc"
+    queries: "./storage/query"
+    schema: "./migrations"
+    engine: "postgresql"
+    emit_json_tags: true
+    emit_prepared_queries: false
+    emit_interface: false
+    emit_exact_table_names: false
+overrides:
+  - go_type: "string"
+    db_type: "uuid"
+  - nullable: true
+    column: "book.image"
+    go_type:
+      type: "string"
+      pointer: true
