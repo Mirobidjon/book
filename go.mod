@@ -1,4 +1,4 @@
-module bitbucket.org/udevs/ur_go_user_service
+module bitbucket.org/udevs/book_service
 
 go 1.16
 

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"net"
 
-	"bitbucket.org/udevs/ur_go_user_service/config"
-	"bitbucket.org/udevs/ur_go_user_service/genproto/user_service"
-	"bitbucket.org/udevs/ur_go_user_service/pkg/logger"
-	"bitbucket.org/udevs/ur_go_user_service/service"
-	"bitbucket.org/udevs/ur_go_user_service/storage/sqlc"
+	"bitbucket.org/udevs/book_service/config"
+	"bitbucket.org/udevs/book_service/genproto/user_service"
+	"bitbucket.org/udevs/book_service/pkg/logger"
+	"bitbucket.org/udevs/book_service/service"
+	"bitbucket.org/udevs/book_service/storage/sqlc"
 	_ "github.com/lib/pq"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
@@ -18,7 +18,7 @@ import (
 func main() {
 	cfg := config.Load()
 
-	log := logger.New(cfg.Environment, "ur_go_user_service")
+	log := logger.New(cfg.Environment, "book_service")
 	defer logger.Cleanup(log)
 
 	conStr := fmt.Sprintf("host=%s port=%v user=%s password=%s dbname=%s sslmode=%s",

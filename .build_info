@@ -1,4 +1,4 @@
-APP=ur_go_user_service
+APP=book_service
 REGISTRY=gitlab.udevs.io:5050
 PROJECT_NAME=urecruit
 CURRENT=$(pwd)

@@ -1,7 +1,7 @@
 package grpc_client
 
 import (
-	"bitbucket.org/udevs/ur_go_user_service/config"
+	"bitbucket.org/udevs/book_service/config"
 )
 
 type ServiceManager interface {

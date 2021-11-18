@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"bitbucket.org/udevs/ur_go_user_service/genproto/user_service"
-	"bitbucket.org/udevs/ur_go_user_service/pkg/helper"
-	"bitbucket.org/udevs/ur_go_user_service/pkg/logger"
-	"bitbucket.org/udevs/ur_go_user_service/storage/sqlc"
+	"bitbucket.org/udevs/book_service/genproto/user_service"
+	"bitbucket.org/udevs/book_service/pkg/helper"
+	"bitbucket.org/udevs/book_service/pkg/logger"
+	"bitbucket.org/udevs/book_service/storage/sqlc"
 	"github.com/xtgo/uuid"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/protobuf/types/known/emptypb"

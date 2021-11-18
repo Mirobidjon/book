@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"bitbucket.org/udevs/ur_go_user_service/pkg/logger"
+	"bitbucket.org/udevs/book_service/pkg/logger"
 	"github.com/golang/protobuf/jsonpb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
